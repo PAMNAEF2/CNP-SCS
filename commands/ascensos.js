@@ -39,7 +39,11 @@ module.exports = {
                 usuario.roles.add("878318145125888020")
                 usuario.roles.remove("810971991464083526")} else if(usuario.roles.cache.find (rol => rol.id === "1008138792256938004")){
                   usuario.roles.add("810971990692200459")
-                  
+                  usuario.roles.remove("1008138792256938004")} else if(usuario.roles.cache.find (rol => rol.id === "810971990692200459")){
+                    usuario.roles.add("810971796059717634")
+                    usuario.roles.remove("878318145125888020")
+                    usuario.roles.add("846404817940250624")
+                  usuario.roles.remove("810971990692200459")} else if(usuario.roles.cache.find (rol => rol.id === "810971796059717634")){
                         usuario.roles.remove("1008138792256938004")} else if(usuario.roles.cache.find (rol => rol.id === "810971796059717634")){
                           usuario.roles.add("810971795179438141")
                           usuario.roles.remove("810971796059717634")} else if(usuario.roles.cache.find (rol => rol.id === "810971795179438141")){
