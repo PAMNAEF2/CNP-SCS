@@ -73,11 +73,3 @@ module.exports = {
       },
 
 };
-usuario.roles.remove("1008138792256938004")} else if(usuario.roles.cache.find (rol => rol.id === "810971990692200459")){
-  usuario.roles.add("810971990164504576")
-  usuario.roles.remove("878318145125888020")
-  usuario.roles.add("846404817940250624")
-  usuario.roles.remove("810971990692200459")} else if(usuario.roles.cache.find (rol => rol.id === "810971990164504576")){
-    usuario.roles.add("810971989405204484")
-    usuario.roles.remove("810971990164504576")} else if(usuario.roles.cache.find (rol => rol.id === "810971989405204484")){
-      usuario.roles.add("810971796059717634")
