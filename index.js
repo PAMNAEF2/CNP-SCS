@@ -47,6 +47,9 @@ client.once('ready', () => {
 		collector.on("collect", async i => {
 			if(i.customId === "FichajeEntrar"){
 				//!i.member.roles.cache.has()
+				if (i.member.roles.cache.find (rol => rol.id === "814734838887088158")) {
+					return i.reply({content: "Bro, que tienes una inactividad osea quitatela en <#811271616431390720> y ya lo vuelves a intentarlo venga, bobo..", ephemeral: true})
+				}		
 				if(!mapa.verificar(i.member.id)){
 					const hoy = new Date();
 					const embed = new EmbedBuilder()
