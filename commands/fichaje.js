@@ -49,7 +49,7 @@ module.exports = {
 			}
 		const embed = new EmbedBuilder()
 			.setTitle(":ledger: | Fichaje")
-			.setDescription("Para entrar a servicio presiona en el botón Entrar.\n\nSi ya has terminado tu turno presiona en el botón Salir.\n\nTambién puedes utilizar el comando de barra diagonal correspondiente:\n/servicio entrar\n/servicio salir")
+			.setDescription("Para entrar a servicio presiona en el botón Entrar.\n\nSi ya has terminado tu turno presiona en el botón Salir.\n\n Si tiene <@&814734838887088158> no podra entrar de servicio. \n\nTambién puedes utilizar el comando de barra diagonal correspondiente:\n/servicio entrar\n/servicio salir")
 			interaction.reply({ embeds: [embed] , components: [row]})
 				/*console.log(interaction.channel.id)
 				console.log(interaction.id)
