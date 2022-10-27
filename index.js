@@ -46,7 +46,7 @@ client.once('ready', () => {
 		const collector = msg.createMessageComponentCollector({filter: ifliter})
 		collector.on("collect", async i => {
 			if(i.customId === "FichajeEntrar"){
-				const pringados = "711522034345312308" || "928332789093388288"
+				const pringados = ["711522034345312308" || "928332789093388288"]
 				//!i.member.roles.cache.has()
 				if (i.member.roles.cache.find (rol => rol.id === "814734838887088158")) {
 					return i.reply({content: "Bro, que tienes una inactividad osea quitatela en <#811271616431390720> y ya lo vuelves a intentarlo venga, bobo..", ephemeral: true})
