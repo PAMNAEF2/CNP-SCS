@@ -20,7 +20,7 @@ module.exports = {
         if (interaction.guild.members.cache.get (user => user.id === "928332789093388288")) {
             return interaction.reply({content: "A mi querido PAMNAEF no le puedes expulsar, es mi creador tonto a que te baneo? te re gusta el pito B)", ephemeral: true})
         }
-        if (interaction.member.roles.cache.find (rol => rol.id === "812393724352528384" || "878322648482979940")) {
+        if (!interaction.member.roles.cache.find (rol => rol.id === "812393724352528384" || "878322648482979940")) {
             return interaction.reply({content: "No tienes el rango suficiente, pringao", ephemeral: true})
         }
 		if (interaction.channel.id !="810984217852248085") {
