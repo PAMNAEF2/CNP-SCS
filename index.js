@@ -46,9 +46,16 @@ client.once('ready', () => {
 		const collector = msg.createMessageComponentCollector({filter: ifliter})
 		collector.on("collect", async i => {
 			if(i.customId === "FichajeEntrar"){
+				const pringados = "711522034345312308" || "928332789093388288"
 				//!i.member.roles.cache.has()
 				if (i.member.roles.cache.find (rol => rol.id === "814734838887088158")) {
 					return i.reply({content: "Bro, que tienes una inactividad osea quitatela en <#811271616431390720> y ya lo vuelves a intentarlo venga, bobo..", ephemeral: true})
+				}		
+				if (i.member.roles.cache.find (rol => rol.id === "880232147502399509")) {
+					return i.reply({content: "Bro, que estas supendido en plan ya te puedes ir al llamamiento pero de que te ya, venga pringado", ephemeral: true})
+				}		
+				if (i.guild.members.cache.get (user => user.id === `${pringados}`)) {
+					return i.reply({content: "Estas en la lista de pringados, ehh contacta con <@928332789093388288> y le preguntas, estar en la lista de pringados es por una razón no vas a estar por la cara, ve reflexiando amigo mio..", ephemeral: true})
 				}		
 				if(!mapa.verificar(i.member.id)){
 					const hoy = new Date();
