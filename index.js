@@ -54,9 +54,6 @@ client.once('ready', () => {
 				if (i.member.roles.cache.find (rol => rol.id === "880232147502399509")) {
 					return i.reply({content: "Bro, que estas supendido en plan ya te puedes ir al llamamiento pero de que te ya, venga pringado", ephemeral: true})
 				}		
-				if (i.guild.members.cache.get (user => user.id === `${pringados}`)) {
-					return i.reply({content: "Estas en la lista de pringados, ehh contacta con <@928332789093388288> y le preguntas, estar en la lista de pringados es por una razón no vas a estar por la cara, ve reflexiando amigo mio..", ephemeral: true})
-				}		
 				if(!mapa.verificar(i.member.id)){
 					const hoy = new Date();
 					const embed = new EmbedBuilder()
